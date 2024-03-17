@@ -24,12 +24,6 @@ app.use("/api/products", (req, res) => {
   });
 });
 
-app.use("/api/services", (req, res) => {
-  return res.status(200).json({
-    message: "This is a new route for services",
-  });
-});
-
 //error handler
 app.use(errorHandler);
 
